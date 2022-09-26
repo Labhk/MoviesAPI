@@ -3,7 +3,7 @@ let app = express();
 let dotenv = require('dotenv');
 let morgan = require('morgan');
 dotenv.config();
-let port = 9870;
+let port = process.env.PORT || 9870;
 let mongo = require('mongodb');
 let cors = require('cors')
 let MongoClient = mongo.MongoClient;
